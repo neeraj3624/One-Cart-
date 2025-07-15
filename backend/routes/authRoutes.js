@@ -3,11 +3,11 @@ import { adminLogin, googleLogin, login, logOut, registration } from "../control
 
 const authRoutes = express.Router()
 
-authRoutes.post("/registration",registration)
-authRoutes.post("/login",login)
-authRoutes.get("/logout",logOut)
-authRoutes.post("/googlelogin",googleLogin)
-authRoutes.post("/adminlogin",adminLogin)
+authRoutes.post("/registration", registration)
+authRoutes.post("/login", login)
+authRoutes.get("/logout", logOut)
+authRoutes.post("/googlelogin", googleLogin)
+authRoutes.post("/adminlogin", adminLogin)
 
 
 
