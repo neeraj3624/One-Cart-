@@ -56,20 +56,13 @@ export const UpdateCart = async (req, res) => {
 export const getUserCart = async (req, res) => {
 
   try {
-
     const userData = await User.findById(req.userId)
     let cartData = await userData.cartData;
-
-
     return res.status(200).json(cartData)
-
-
-
   } catch (error) {
     console.log(error)
     return res.status(500).json({ message: "getUserCart error" })
   }
-
 }
 
 

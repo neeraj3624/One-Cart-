@@ -21,8 +21,5 @@ const adminAuth = async (req, res, next) => {
         console.log("adminAuth error")
         return res.status(500).json({ message: `adminAuth error ${error}` })
     }
-
-
 }
-
 export default adminAuth

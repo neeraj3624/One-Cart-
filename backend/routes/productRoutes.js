@@ -16,3 +16,4 @@ productRoutes.post("/remove/:id", adminAuth, removeProduct)
 
 export default productRoutes
 
+

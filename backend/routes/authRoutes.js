@@ -10,6 +10,4 @@ authRoutes.post("/googlelogin", googleLogin)
 authRoutes.post("/adminlogin", adminLogin)
 
 
-
-
 export default authRoutes

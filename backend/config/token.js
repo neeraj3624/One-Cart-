@@ -18,6 +18,4 @@ export const genToken1 = async (email) => {
   } catch (error) {
     console.log("token error")
   }
-
-
 }

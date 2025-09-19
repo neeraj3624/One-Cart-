@@ -89,7 +89,6 @@ export const googleLogin = async (req, res) => {
                 name, email
             })
         }
-
         let token = await genToken(user._id)
         res.cookie("token", token, {
             httpOnly: true,
@@ -103,7 +102,6 @@ export const googleLogin = async (req, res) => {
         console.log("googleLogin error")
         return res.status(500).json({ message: `googleLogin error ${error}` })
     }
-
 }
 
 
